@@ -3,7 +3,7 @@ const validatePost = (req, res, next) => {
 
 	const title = post.title?.trim?.() ?? '';
 	if (title === '') {
-		return res.status(400).json({ message: 'Title is require' });
+		return res.status(400).json({ message: 'Title is required' });
 	}
 
 	next();
