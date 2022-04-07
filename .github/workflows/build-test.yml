@@ -10,6 +10,9 @@ on:
 env: 
  DB_URI: ${{secrets.DB_URI}}
 
+env:
+ DB_URI: ${{secrets.DB_URI}}
+
 jobs:
  build:
   runs-on: ubuntu-latest
