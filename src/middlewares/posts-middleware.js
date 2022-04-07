@@ -1,14 +1,14 @@
 const validatePost = (req, res, next) => {
-  const post = req.body;
+	const post = req.body;
 
-  const title = post.title?.trim?.() ?? "";
-  if (title === "") {
-    return res.status(400).json({ message: "Title is required" });
-  }
+	const title = post.title?.trim?.() ?? '';
+	if (title === '') {
+		return res.status(400).json({ message: 'Title is require' });
+	}
 
-  next();
+	next();
 };
 
 module.exports = {
-  validatePost,
+	validatePost,
 };
